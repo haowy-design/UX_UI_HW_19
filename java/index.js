@@ -4,7 +4,7 @@ $(document).ready(function(){
     setTimeout(function(){
         $("#nameLogo").animate({left:"+=30%"}, 900);
         $("#loading-screen").fadeOut(850);
-    }, 3500);
+    }, 2100);
 
     //Page Links
 
