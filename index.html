@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module 18: Portfolio</title>
+    <title>Module 19: Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="/java/index.js"></script>
     <link rel="stylesheet" href="css/index.css" />
     <script>
       (function (d) {
@@ -45,14 +47,23 @@
     />
   </head>
   <body>
+    <!--Loading Screen-->
+    <section id="loading-screen">
+      <div id="nameLogo">HAO PHUNG</div>
+    </section>
+
+    <!--Main Webpage-->
     <main>
+    <!--Name & Key Links-->
     <section class="grid-container">
         <div class="contentArea">
             <div class="keyLinks">
-                <div class="linkName">Graphic</div>
-                <a href="projects-ux-ui.html" class="linkName">UX/UI</a>
-                <a href="aboutme.html" class="linkName">Designer</a>
+                <div id="graphicText" class="linkName">Graphic</div>
+                <a href="projects-ux-ui.html" id="uxText" class="linkName">UX/UI</a>
+                <a href="aboutme.html" id="designerText" class="linkName">Designer</a>
             </div>
+
+            <!--Description & CTA-->
             <div class="descriptionArea">
                 <p>Melbourne based designer.<br><br>Building complex experiences<br>through simple design.</p>
             </div>
@@ -61,11 +72,12 @@
             </div>
         </div>
         <div class="nameArea">
-            <p>HAO PHUNG</p>
+            <p class="nameHome">HAO PHUNG</p>
         </div>
     </section>
     </main>
 
+    <!--Bottom Navigation Bar-->
     <header>
         <a href="index.html"><img src="images/Main Logo - Grey.png" class="logo" alt="HP Logo" ></a>
         <section class="navBar">
@@ -74,7 +86,8 @@
           <a href="contactme.html" class="navBarLinks">Contact</a>
         </section>
       </header>
-  
+
+    <!--Footer-->
       <footer>
         <section class="socialMediaFooter">
           <img

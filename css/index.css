@@ -20,6 +20,31 @@ body{
     box-sizing: inherit;
 }
 
+/* Loading Screen */
+#loading-screen{
+  background-image:url(../images/Background.jpg);
+  background-position:center;
+  background-repeat:no-repeat;
+  position:absolute;
+  height:100vh;
+  width:100%;
+  z-index:2;
+}
+
+#nameLogo{
+  width:100%;
+  font-family: 'inter',sans-serif;
+  font-size: 1.75rem;
+  font-weight:600;
+  letter-spacing: 0.8rem;
+  white-space: nowrap;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Main Content */
 
 .grid-container {
@@ -28,9 +53,8 @@ body{
   'contentA nameA'
   'descriptionA nameA'
   'buttonA nameA';
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   grid-gap: 10px;
-  padding: 10px;
   width: 100vw;
   height: 100vh;
   z-index: 1;
@@ -39,7 +63,7 @@ body{
 .contentArea{
     position: relative;
     top:50%;
-    padding-left: 4em;
+    padding-left: 6em;
 }
 
 .descriptionArea{
@@ -68,7 +92,38 @@ body{
 }
 
 .linkName:hover{
-    color:#809EAD;
+    color:white;
+}
+
+.change-background {
+  background-image: none;
+  background-color:#333333;
+}
+
+.change-element-color{
+  color: white;
+}
+
+.graphicImage {
+  background-image:url(../images/LA\ Business\ Cards\ Mockup.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.uxImage{
+  background-image:url(../images/RSPCA\ Mockup.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-color: #C1BAB4;
+}
+
+.designerImage{
+  background-image:url(../images/Photo\ of\ Hao\ 2.jpg);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 
 .description{
@@ -78,17 +133,24 @@ body{
 
 .nameArea{
     position:absolute;
-    top:40%;
-    right:4.5em;
+    right:0;
+    height:100vh;
+    width:50%;
+    float:right;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+
 }
 
-.nameArea p{
+.nameHome{
     font-family: 'inter',sans-serif;
     font-size: 1.75rem;
     font-weight:600;
     letter-spacing: 0.8rem;
     white-space: nowrap;
     text-align: center;
+    margin-right:4.5rem;
 }
 
 .hpbutton {
@@ -125,6 +187,13 @@ body{
 .hpbutton:focus-visible {
   box-shadow: none;
 }
+
+.inverted-button-colors{
+  background-color: #333333;
+  border: 1px solid white;
+  color: white;
+}
+
 
 /* Header */
 
