@@ -1,10 +1,16 @@
 $(document).ready(function(){
 
     //Loading Screen
-    setTimeout(function(){
-        $("#nameLogo").animate({left:"+=30%"}, 900);
-        $("#loading-screen").fadeOut(850);
-    }, 2100);
+    if (sessionStorage.getItem("loadingScreenPlayed") !== "true") {
+        setTimeout(function(){
+            $("#nameLogo").animate({left:"+=30%"}, 900);
+            $("#loading-screen").fadeOut(850);
+        }, 2100);
+        sessionStorage.setItem("loadingScreenPlayed", "true");
+    }
+    else{
+        $("#loading-screen").css("display", "none");
+    }
 
     //Page Links
 

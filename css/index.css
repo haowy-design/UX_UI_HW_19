@@ -98,10 +98,12 @@ body{
 .change-background {
   background-image: none;
   background-color:#333333;
+  transition: background-color 0.5s ease;
 }
 
 .change-element-color{
   color: white;
+  transition: color 0.2s ease;
 }
 
 .graphicImage {
@@ -109,6 +111,7 @@ body{
   background-position:center;
   background-repeat:no-repeat;
   background-size: cover;
+  transition: background-image 0.5s ease;
 }
 
 .uxImage{
@@ -117,6 +120,7 @@ body{
   background-repeat:no-repeat;
   background-size: cover;
   background-color: #C1BAB4;
+  transition: background-image 0.5s ease;
 }
 
 .designerImage{
@@ -124,6 +128,7 @@ body{
   background-position:center;
   background-repeat:no-repeat;
   background-size: cover;
+  transition: background-image 0.5s ease;
 }
 
 .description{
